@@ -1,0 +1,82 @@
+html {
+  font-size: 10px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+  margin: auto;
+  color: #030303;
+}
+h2 {
+  font-size: 50px;
+  text-align: center;
+  margin: auto;
+  color: #FFD37E;
+}
+
+p, li {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 1px;
+}
+.container {
+  position: relative;
+  width: 100%;
+  touch-action: manipulation;
+  margin: 0 auto;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+/* Make the image responsive */
+.container img {
+	height: auto;
+	flex-grow: 1;
+	width: 100%;
+	max-width: 800px;
+}
+@media(min-width:1000px) {
+	.container img {
+		font-size: 40px;
+		-webkit-text-stroke-width: 1.5px
+	}
+}
+
+/* Style the button and place it in the middle of the container/image */
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  max-width: 800px;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  opacity: 0;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.container .btn:hover {
+  background-color: black;
+}
+
+html, body 
+{margin: 0; height: 100%; overflow: hidden}
+
+img {
+  display: block;
+  margin: 0 auto;
+}

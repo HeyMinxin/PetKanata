@@ -12,6 +12,6 @@ function changeSrc()
     document.getElementById("myKanata").src="images/Kanata2.png";
     timeoutId = setTimeout(function() {
         document.getElementById("myKanata").src="images/Kanata1.png" ;
-    }, 100); 
+    }, 150); 
 }
 
